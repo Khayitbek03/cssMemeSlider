@@ -10,11 +10,14 @@ body {
 input {
   display: none;
 }
+.foto_overflow {
+  width: 50rem;
+  overflow: hidden;
+}
 .images {
   display: flex;
   justify-content: space-between;
-  gap: 30rem;
-  overflow: hidden;
+  transition: 0.7s ease-in-out;
 }
 img {
   width: 50rem;
@@ -53,4 +56,36 @@ img {
   font-size: 1.5rem;
   color: aliceblue;
   text-align: center;
+}
+#switcher1:checked ~ .wrapper label:nth-child(1),
+#switcher2:checked ~ .wrapper label:nth-child(2),
+#switcher3:checked ~ .wrapper label:nth-child(3),
+#switcher4:checked ~ .wrapper label:nth-child(4) {
+  background-color: cadetblue;
+  border-color: cadetblue;
+  transition: 0.5s ease-in-out;
+}
+#switcher1:checked ~ .foto_slides .images {
+  margin-left: 0;
+}
+#switcher1:checked ~ .wrapper .text_slides .texts {
+  margin-left: 0;
+}
+#switcher2:checked ~ .foto_slides .images {
+  margin-left: -50rem;
+}
+#switcher2:checked ~ .wrapper .text_slides .texts {
+  margin-left: -20rem;
+}
+#switcher3:checked ~ .foto_slides .images {
+  margin-left: -100rem;
+}
+#switcher3:checked ~ .wrapper .text_slides .texts {
+  margin-left: -40rem;
+}
+#switcher4:checked ~ .wrapper .text_slides .texts {
+  margin-left: -60rem;
+}
+#switcher4:checked ~ .foto_slides .images {
+  margin-left: -200rem;
 }
