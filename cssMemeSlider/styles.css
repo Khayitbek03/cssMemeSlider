@@ -1,5 +1,6 @@
 body {
   background-color: tan;
+  height: 100vh;
   margin: 0;
 }
 .container {
@@ -12,8 +13,12 @@ input {
 .images {
   display: flex;
   justify-content: space-between;
-  gap: 1rem;
+  gap: 30rem;
   overflow: hidden;
+}
+img {
+  width: 50rem;
+  height: 72.2222vh;
 }
 .switchers label {
   width: 1.5rem;
@@ -28,15 +33,23 @@ input {
 .switchers {
   display: flex;
   justify-content: space-between;
-  margin: 1rem 0 0;
+}
+.wrapper {
+  flex-wrap: wrap;
+  margin-top: 2rem;
+}
+.text_overflow {
+  width: 15rem;
+  overflow: hidden;
 }
 .texts {
-  width: 10.982rem;
+  width: 75rem;
   height: fit-content;
   overflow: hidden;
 }
 .text {
   width: 15rem;
+  height: fit-content;
   font-size: 1.5rem;
   color: aliceblue;
   text-align: center;
