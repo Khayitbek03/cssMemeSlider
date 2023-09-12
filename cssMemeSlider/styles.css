@@ -1,0 +1,17 @@
+body {
+  background-color: tan;
+  margin: 0;
+}
+.container {
+  width: 50rem;
+  margin: 0 auto;
+}
+input {
+  display: none;
+}
+.images {
+  display: flex;
+  justify-content: space-between;
+  gap: 1rem;
+  overflow: hidden;
+}
